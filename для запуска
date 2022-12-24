@@ -1,0 +1,7 @@
+./tcpclient 127.0.0.1 10050 8
+./tcpserver 10050 5 &
+./udpserver 20001 100 &
+sleep 1
+./udpclient 127.0.0.1 20001 100
+
+(можно через sh)
